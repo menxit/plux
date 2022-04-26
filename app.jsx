@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom/client'
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/sw.js')
+    .then(() => { console.log('Service Worker Registered'); });
+}
+
 const Light = ({ status }) => {
   return (
     <div className="light">

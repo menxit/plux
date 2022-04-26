@@ -1,0 +1,15 @@
+{
+  "background_color": "black",
+  "description": "plux",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "92x92",
+      "type": "image/png"
+    }
+  ],
+  "name": "plux",
+  "short_name": "plux",
+  "start_url": "/index.html"
+}
