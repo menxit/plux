@@ -1,0 +1,23 @@
+{
+  "name": "plux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run watch\"",
+    "server": "http-server -p 4040 ./public",
+    "watch": "esbuild app.jsx --bundle --outfile=./public/app.js --watch",
+    "build": "esbuild app.jsx --bundle --outfile=./public/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "esbuild": "^0.14.38",
+    "http-server": "^14.1.0"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
